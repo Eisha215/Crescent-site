@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crescent Community Care</title>
+        <link rel="stylesheet" href="/src/css/output.css">
+        <link rel="stylesheet" href="/src/Crescent-assets/assets/ssrc-styles.css">
+      
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://kit.fontawesome.com/7f7b6f90d4.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/datepicker.min.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <div class="header flex justify-around z-30 py-3">
+                <div class="logo -mt-2" >
+                    <img src="/src/Crescent-assets/assets/Crescent-Community-Care-logo.webp" class="w-24"> 
+                </div>
+                <div class="navbar hidden md:block relative my-6">
+
+                    <ul class="navigation-bar flex justify-around  font-semibold ">
+                        <li class="border-r-2 border-blue-500 px-4 "><a class="inline-block" href="Crescent-home.html">Home</a></li>
+                        <li id="dropdownDefaultButton" class="dropdown-toggle cursor-pointer relative overflow-visible border-r-2 border-blue-500 px-4" data-dropdown-toggle="menu-dropdown" data-dropdown-delay="0" data-dropdown-offset-distance="-3" data-dropdown-trigger="hover"><a class="inline-block ">Services <i class="fa-solid fa-caret-down"></i></a></li>
+                        <div id="menu-dropdown" class="absolute hidden bg-white h-auto z-30 flex-col" aria-labelledby="dropdownDefaultButton">
+                            <ul class=" dropdown-list ">
+                                <li class="py-2 px-4"><a class="inline-block rounded">Accommodation Services</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Daily Living</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Travel and Transport</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Plan Management</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Behavior Support Service</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Development of Life Skills Service</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Support Coordination Service</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Household Tasks Service</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Psychology Services</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Group and Centre Activities</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Specialist Disability Accommodation</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Personal and Physical Training</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Occupational Therapy</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Personal and Physical Training</a></li>
+                            </ul>
+                        </div>
+                        
+                        <li class="border-r-2 border-blue-500 px-4 "><a class="inline-block " href="Crescent-NDIS.html">NDIS</a></li>
+                        <li class="border-r-2 border-blue-500 px-4 "><a class="inline-block "  href="Crescent-SSRC.html">SSRC</a></li>
+                        <li class="border-r-2 border-blue-500 px-4 "><a class="inline-block "  href="Crescent-ReferralForm.html">Referral Form</a></li>
+                        <li class="border-r-2 border-blue-500 px-4 "><a class="inline-block " href="Crescent-DetailedReferralForm.html">Detailed Referral Form</a></li>
+                        <li class="border-r-2 border-blue-500 px-4 "><a class="inline-block " href="Crescent-ContactPage.html">Contact</a></li>
+                        <li class="border-r-2 border-blue-500 px-4 "><a class="inline-block " href="Crescent-AboutPage.html">About Us</a></li>
+                        <li class="px-4"><a class="inline-block " href="Crescent-Blogs.html">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="nav-bar block md:hidden  ">
+                    <button class="text-2xl mt-6" onclick="togglemenu()"><i class="fa-solid fa-bars"></i></button>
+                </div>
+                
+            </div>
+        </header>
+        <div id="navbar-sm" class="navbarr my-3 hidden md:hidden z-40 bg-white absolute mt-0">
+            <ul class="navigation-bar flex flex-col  font-semibold  my-10 px-16 w-96 sm:h-96 h-80">
+                <li class="  px-4 my-2"><a class="inline-block " href="Crescent-home.html">Home</a></li>
+                <li id="dropdownDefaultButton" class=" dropdown-toggle cursor-pointer relative overflow-visible ml-4 my-2" data-dropdown-toggle="dropdown-menu" data-dropdown-delay="0" data-dropdown-offset-distance="-8" data-dropdown-trigger="hover"><a href="Crescent-Services.html">Services <i class="fa-solid fa-caret-down"></i></a></li>
+        <div id="dropdown-menu" class="absolute hidden h-auto  z-40 flex-col " aria-labelledby="dropdownDefaultButton">
+            <ul class=" dropdown-list bg-white">
+                <li class="py-2 px-4 "><a>Accommodation Services</a></li>
+                <li class="py-2 px-4 "> <a>Daily Living</a></li>
+                <li class="py-2 px-4 "><a>Travel and Transport</a></li>
+                <li class="py-2 px-4 "><a>Plan Management</a></li>
+                <li class="py-2 px-4 "><a>Behavior Support Service</a></li>
+                <li class="py-2 px-4"><a>Development of Life Skills Service</a></li>
+                <li class="py-2 px-4"> <a>Support Coordination Service</a></li>
+                <li class="py-2 px-4"><a>Household Tasks Service</a></li>
+                <li class="py-2 px-4"><a>Psychology Services</a></li>
+                <li class="py-2 px-4"> <a>Group and Centre Activities</a></li>
+                <li class="py-2 px-4"><a>Specialist Disability Accommodation</a></li>
+                <li class="py-2 px-4"> <a>Personal and Physical Training</a></li>
+                <li class="py-2 px-4"><a>Occupational Therapy</a></li>
+                <li class="py-2 px-4"> <a>Personal and Physical Training</a></li>
+            </ul>
+        </div>     
+        <li class=" px-4 my-2"><a class="inline-block " href="Crescent-NDIS.html">NDIS</a></li>
+        <li class="px-4 my-2 "><a class="inline-block " href="Crescent-SSRC.html">SSRC</a></li>
+        <li id="form-dropdown" class=" dropdown-toggle cursor-pointer relative overflow-visible px-4 my-2" data-dropdown-toggle="form-dropdown-menu" data-dropdown-delay="0" data-dropdown-offset-distance="-6" data-dropdown-trigger="hover"><a class="inline-block ">Forms <i class="fa-solid fa-caret-down"></i></a></li>
+        <div id="form-dropdown-menu" class="absolute hidden  h-auto bg-white z-40 flex-col  " aria-labelledby="form-dropdown">
+            <ul class=" dropdown-list ">
+                <li class="py-2 px-4"><a class="inline-block " href="Crescent-ReferralForm.html">Referral Form</a></li>
+                <li class="py-2 px-4"> <a class="inline-block" href="Crescent-DetailedReferralForm.html">Detailed Referral Form</a></li>
+            </ul>
+        </div>
+        <li class=" px-4 my-2"><a class="inline-block " href="Crescent-ContactPage.html">Contact</a></li>
+        <li class=" px-4 my-2"><a class="inline-block " href="Crescent-AboutPage.html">About Us</a></li>
+        <li class="px-4 my-2"><a class="inline-block " href="Crescent-Blogs.html">Blogs</a></li>
+            </ul>
+        </div>
+        <section class="referral-form-section  mb-96 relative" style="background: url('/src/Crescent-assets/assets/Forms/young-adult-taking-care-disabled-friend_52683-85877.avif'); background-size:cover;">
+            <div class="referral-form  bg-black opacity-80 md:py-64 py-96 relative">
+
+            </div>
+            <div class="form absolute top-12 md:top-24 py-12 bg-white lg:mx-64 md:mx-32 sm:mx-24 mx-6  rounded-lg ">
+                
+                    <form class="grid md:grid-cols-2  justify-items-center align-middle">
+                        <div class="right-form-area  w-5/6">
+                            <h2 class="my-3 text-center font-bold text-4xl relative bottom-10">Referral Form</h2>
+                            <div class=" grid sm:grid-cols-2 gap-4">
+                                <div class="relative ">
+                                    <input type="text" id="floating_filled" class="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label for="floating_filled" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">First Name</label>
+                                </div>
+    
+                                <div class="relative ">
+                                    <input type="text" id="floating_filled" class="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label for="floating_filled" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Last Name</label>
+                                </div>
+        
+                                <div class="relative ">
+                                    <input type="number" id="floating_filled" class="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label for="floating_filled" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Phone Number</label>
+                                </div>
+    
+                                <div class="relative ">
+                                    <input type="email" id="floating_filled" class="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label for="floating_filled" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Email </label>
+                                </div>
+    
+                               
+    
+                                <div class="relative ">
+                                    <input type="text" id="floating_filled" class="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label for="floating_filled" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Name of Organization</label>
+                                </div>
+    
+                                <div class="relative ">
+                                    <input type="text" id="floating_filled" class="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                    <label for="floating_filled" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Job Title</label>
+                                </div>
+    
+                                 
+      
+                            </div>
+                            <div class="relative my-3">
+                                <h2 class="text-xl font-semibold">Any Risks Or Issues ?</h2>            
+                                <p>Are there any environmental, behavioural or other issues we should be aware of? If so please indicate below and we will contact you to discuss so we can provide therapy in a safe and supportive way</p>                
+                            
+                                <textarea id="message" rows="4" class="block p-2.5 my-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
+        
+                            </div>
+                            
+                            <div class="relative my-3">
+                                <h2 class="text-xl font-semibold">How did you hear about us?</h2>            
+                            
+                                <textarea id="message" rows="4" class="block p-2.5 my-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder=""></textarea>
+        
+                            </div>
+    
+    
+                            <button type="button" class="prev-btn bg-blue-500 text-white absolute my-3 font-medium rounded-lg  px-5 py-2.5 text-center mr-2 mb-2"><a href="Crescent-ReferralForm.html">Previous</a></button>
+    
+                            <button type="button" class="ml-32 send-btn absolute my-3 bg-blue-500 text-white font-medium rounded-lg  px-5 py-2.5 text-center mr-2 mb-2"><a href="#">Send</a></button>
+    
+                        </div>
+    
+                        <div class="left-form-area relative hidden md:block w-3/4">
+                            <img src="/src/Crescent-assets/assets/Forms/adult-woman-man-working-together-office_23-2148461574.avif" >
+                            
+                        </div>
+
+                    </form>
+
+            </div>
+        </section>
+        <section class="contact-form py-24 bg-gray-100">
+            <h1 class="text-5xl font-bold text-center">GET IN TOUCH!!</h1>
+            <div class="contact-form py-24 flex justify-center ">
+                <form class="bg-white lg:w-4/6 py-20 px-10 rounded-lg">
+                    <div class="form flex flex-col md:flex-row  justify-center gap-16">
+                        <div class="form-left ">
+                            <label>Your Name</label><br>
+                            <div class="flex gap-24 relative bg-gray-100 w-64 mb-3">
+                                <img src="/src/Crescent-assets/assets/icons/person.png" class="w-8 absolute left-4 pr-1 border-r-2 top-6 border-gray-500">
+                                <input type="text" class="w-44 h-12 bg-gray-100 relative left-16 outline-none  border-none my-3"><br>
+                            </div>
+                            <label>Email</label><br>
+                            <div class="flex gap-24 relative  bg-gray-100 w-64 mb-3">
+                                <img src="/src/Crescent-assets/assets/icons/mail.png" class="w-8 absolute left-4 pr-1 top-6 border-r-2 border-gray-500">
+                                <input type="email" class="w-44 h-12 bg-gray-100 relative left-16 outline-none border-none my-3"><br>
+                            </div>
+                            
+                            <label>Phone</label><br>
+                            <div class="flex  gap-24 relative  bg-gray-100 w-64" >
+                                <img src="/src/Crescent-assets/assets/icons/smartphone.png" class="w-8 absolute left-4 pr-1 top-6 border-r-2 border-gray-500">
+                                <input type="number" class="w-44 h-12 bg-gray-100 relative left-16 outline-none border-none my-3"><br>
+                            </div>
+                        </div>
+                        <div class="form-right">
+                            <label>Message</label><br>
+                            <textarea placeholder="Your message " cols="33" rows="11" class="bg-gray-100 border-none"></textarea>
+                        </div>
+                    </div>
+                    
+                    <button class="text-center relative lg:left-28  Load-btn text-white px-4 py-3 w-40 rounded-md ">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
+
+        <footer class="text-white " style="background: url('/src/Crescent-assets/assets/Blogs/child-helping-his-disabled-mother_23-2149226794.avif'); background-size: cover; background-position: 20% 50%;">
+            <div class="footer-section block md:flex justify-around gap-20 sm:px-40 px-10 py-20 sm:py-28    z-1 bg-black text-black  opacity-80 ">
+                <div class="logo md:w-2/4 md:ml-4">
+                    <img src="/src/Crescent-assets/assets/Crescent-Community-Care-logo.webp" class="w-24">
+                    <h3 class="font-bold text-white mt-2 text-xl mb-3">About Crescent Care</h3>
+                    <p class="text-white">Supporting people to have a better and quality lifestyle that can enable them in achieving their goals.</p>
+                </div>
+                <div class="services md:w-1/2 text-white">
+                    <h3 class="font-bold text-2xl relative mb-3">Services</h3>
+                    <ul>
+                        <li><a>Accommodation Services</a></li>
+                        <li><a>Travel and Transport</a></li>
+                        <li ><a>Plan Management</a></li>
+                        <li><a>Daily Living</a></li>
+                        <li ><a href="#">View All Services <i class="fa-solid fa-angles-right"></i> </a></li>
+                    </ul>
+                </div>
+                
+                <div class="officess md:w-2/4 text-white">
+                    <h3 class="font-bold text-2xl mb-3 relative">Offices</h3>
+                    <ul>
+                        <li >Suite G004 Ground Level Mega workspace Unit 112, No 22-30 Wallace Avenue Point Cook VIC 3030</a></li>
+                        <li >169 Fullarton Road. Level 3, Dulwich Adelaide, SA 5065, AUS</li>
+                        <li >100 Havelock Street, Perth, WA 6005, AUS</li>
+                        <li >66 Smith St, Darwin City NT 0800</li>
+                     
+                    </ul>
+                </div>
+                <div class="map  mr-8">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.473920608098!2d144.74311491584638!3d-37.87259814518631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad688543e294859%3A0xc2434a29ab3f0933!2sMegaWorkspace!5e0!3m2!1sen!2s!4v1679878295632!5m2!1sen!2s" width="250" height="250" style="border: 0px; pointer-events: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+            <div class="bg-black opacity-80 text-white">
+                <p class="text-center border-t border-gray-400 py-4 ">COPYRIGHT © 2021 CRESCENT COMMUNITY CARE</p>
+
+            </div>
+        </footer>
+        <script src="index.js"> </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+    </body>
+</html>

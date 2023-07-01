@@ -1,0 +1,63 @@
+.navbar ul li{
+    transform: skewX(-23deg);
+    border-right-color: #6aadd9;
+    cursor: pointer;
+}
+
+.navbar ul li:hover{
+    color:#6aadd9;
+ }
+
+
+.navbar ul li a{
+    transform: skewX(23deg);
+}
+.missioin-img,.vision-img,.values-img{
+    background: rgb(39,138,205);
+background: linear-gradient(150deg, rgba(39,138,205,1) 0%, rgba(106,173,217,1) 40%, rgba(118,203,158,1) 59%);
+}
+.mission-des,.vision-des,.values-des{
+    background-color:#6aadd9;
+}
+
+.about-btn::before,
+.about-btn::after{
+    content:" ";
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 5px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;
+
+}
+
+.about-btn::after{
+      bottom: 0;
+      right: 0;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: white;
+      border-right-color: white;
+}
+
+.about-btn:hover:after,
+.about-btn:hover:before{
+  width: 100%;
+  height: 100%;
+}
+
+.about-btn::before{
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: white;
+    border-left-color: white;
+}
+
+.get-in-touch-section{
+    background: rgb(39,138,205);
+    background: linear-gradient(150deg, rgba(39,138,205,1) 0%, rgba(106,173,217,1) 40%, rgba(118,203,158,1) 59%);
+}

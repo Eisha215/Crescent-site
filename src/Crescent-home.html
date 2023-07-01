@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Crescent Community Care</title>
+        <link rel="stylesheet" href="/src/css/output.css">
+        <link rel="stylesheet" href="/src/Crescent-assets/assets/home-styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://kit.fontawesome.com/7f7b6f90d4.js" crossorigin="anonymous"></script>
+      
+        
+        
+    </head>
+    <body>
+        <header>
+            <div class="header container mx-auto flex justify-between relative items-center py-3">
+                <div class="logo">  
+                    <img src="/src/Crescent-assets/assets/Crescent-Community-Care-logo.webp" class="w-24"> 
+                </div>
+
+                <div class="navbar hidden md:block  ">
+                    <ul class="navigation-bar flex justify-around   font-semibold ">
+                        <li class="border-r-2 border-blue-500 px-4 "><a class="inline-block" href="Crescent-home.html">Home</a></li>
+                        <li id="dropdownDefaultButton" class="dropdown-toggle cursor-pointer relative overflow-visible border-r-2 border-blue-500 px-4" data-dropdown-toggle="menu-dropdown" data-dropdown-delay="0" data-dropdown-offset-distance="-3" data-dropdown-trigger="hover"><a class="inline-block " href="Crescent-Services.html">Services <i class="fa-solid fa-caret-down"></i></a></li>
+                        <div id="menu-dropdown" class="absolute hidden bg-white h-auto z-30 flex-col" aria-labelledby="dropdownDefaultButton">
+                            <ul class=" dropdown-list ">
+                                <li class="py-2 px-4"><a class="inline-block ">Accommodation Services</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Daily Living</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Travel and Transport</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Plan Management</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Behavior Support Service</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Development of Life Skills Service</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Support Coordination Service</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Household Tasks Service</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Psychology Services</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Group and Centre Activities</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Specialist Disability Accommodation</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Personal and Physical Training</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Occupational Therapy</a></li>
+                                <li class="py-2 px-4"><a class="inline-block ">Personal and Physical Training</a></li>
+                            </ul>
+                        </div>
+                        
+                        <li class="border-r-2 border-blue-500 px-4 "><a class="inline-block " href="Crescent-NDIS.html">NDIS</a></li>
+                        <li class="border-r-2 border-blue-500 px-4 "><a class="inline-block " href="Crescent-SSRC.html">SSRC</a></li>
+                        <li id="dropdownDefaultButton" class="dropdown-toggle cursor-pointer relative overflow-visible border-r-2 border-blue-500 px-4" data-dropdown-toggle="form-dropdown" data-dropdown-delay="0" data-dropdown-offset-distance="-3" data-dropdown-trigger="hover"><a class="inline-block " >Forms <i class="fa-solid fa-caret-down"></i></a></li>
+                        <div id="form-dropdown" class="absolute hidden bg-white h-aut0 z-30 flex-col" aria-labelledby="dropdownDefaultButton">
+                            <ul class="dropdown-list">
+                                <li class="py-2 px-4"><a class="inline-block " href="Crescent-ReferralForm.html">Referral Form</a></li>
+                                <li class="py-2 px-4"><a class="inline-block " href="Crescent-DetailedReferralForm.html">Detailed Referral Form</a></li>
+                            </ul>
+                        </div>
+                        <li class="border-r-2 border-blue-500 px-4 "><a class="inline-block " href="Crescent-ContactPage.html">Contact</a></li>
+                        <li class="border-r-2 border-blue-500 px-4 "><a class="inline-block " href="Crescent-AboutPage.html">About Us</a></li>
+                        <li class="px-4"><a class="inline-block " href="Crescent-Blogs.html">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-bar block md:hidden  ">
+                    <button class="text-2xl mt-6" onclick="togglemenu()"><i class="fa-solid fa-bars"></i></button>
+                </div>
+                
+            </div>
+        </header>
+
+        <div id="navbar-sm" class="navbarr my-3 hidden md:hidden z-40 bg-white absolute mt-0">
+            <ul class="navigation-bar flex flex-col  font-semibold  my-10 px-16 w-96 sm:h-96 h-80">
+                <li class="  px-4 my-2"><a class="inline-block " href="Crescent-home.html">Home</a></li>
+                <li id="dropdownDefaultButton" class=" dropdown-toggle cursor-pointer relative overflow-visible ml-4 my-2" data-dropdown-toggle="dropdown-menu" data-dropdown-delay="0" data-dropdown-offset-distance="-8" data-dropdown-trigger="hover"><a href="Crescent-Services.html">Services <i class="fa-solid fa-caret-down"></i></a></li>
+        <div id="dropdown-menu" class="absolute hidden h-auto  z-40 flex-col " aria-labelledby="dropdownDefaultButton">
+            <ul class=" dropdown-list bg-white">
+                <li class="py-2 px-4 "><a>Accommodation Services</a></li>
+                <li class="py-2 px-4 "> <a>Daily Living</a></li>
+                <li class="py-2 px-4 "><a>Travel and Transport</a></li>
+                <li class="py-2 px-4 "><a>Plan Management</a></li>
+                <li class="py-2 px-4 "><a>Behavior Support Service</a></li>
+                <li class="py-2 px-4"><a>Development of Life Skills Service</a></li>
+                <li class="py-2 px-4"> <a>Support Coordination Service</a></li>
+                <li class="py-2 px-4"><a>Household Tasks Service</a></li>
+                <li class="py-2 px-4"><a>Psychology Services</a></li>
+                <li class="py-2 px-4"> <a>Group and Centre Activities</a></li>
+                <li class="py-2 px-4"><a>Specialist Disability Accommodation</a></li>
+                <li class="py-2 px-4"> <a>Personal and Physical Training</a></li>
+                <li class="py-2 px-4"><a>Occupational Therapy</a></li>
+                <li class="py-2 px-4"> <a>Personal and Physical Training</a></li>
+            </ul>
+        </div>     
+                <li class=" px-4 my-2"><a class="inline-block " href="Crescent-NDIS.html">NDIS</a></li>
+                <li class="px-4 my-2 "><a class="inline-block " href="Crescent-SSRC.html">SSRC</a></li>
+                <li id="form-dropdown" class=" dropdown-toggle cursor-pointer relative overflow-visible px-4 my-2" data-dropdown-toggle="form-dropdown-menu" data-dropdown-delay="0" data-dropdown-offset-distance="-6" data-dropdown-trigger="hover"><a class="inline-block ">Forms <i class="fa-solid fa-caret-down"></i></a></li>
+                <div id="form-dropdown-menu" class="absolute hidden  h-auto bg-white z-40 flex-col  " aria-labelledby="form-dropdown">
+                    <ul class=" dropdown-list ">
+                        <li class="py-2 px-4"><a class="inline-block " href="Crescent-ReferralForm.html">Referral Form</a></li>
+                        <li class="py-2 px-4"> <a class="inline-block" href="Crescent-DetailedReferralForm.html">Detailed Referral Form</a></li>
+                    </ul>
+                </div>
+                <li class=" px-4 my-2"><a class="inline-block " href="Crescent-ContactPage.html">Contact</a></li>
+                <li class=" px-4 my-2"><a class="inline-block " href="Crescent-AboutPage.html">About Us</a></li>
+                <li class="px-4 my-2"><a class="inline-block " href="Crescent-Blogs.html">Blogs</a></li>
+            </ul>
+        </div>
+
+
+        <section class="Hero-landing-page  flex justify-center items-center  h-screen " style="background:url('/src/Crescent-assets/assets/man-woman-wheelchairs-ride-around-park.jpg'); background-size: cover;">
+
+        <div class="title text-white  bg-black opacity-80 relative  lg:h-80 md:w-2/3 px-10 md:px-5 py-6 md:text-center">
+            <h1 class="font-bold ">CRESCENT COMMUNITY CARE</h1>
+            <h3 class="font-semibold ">Unlocking Abilities and Opportunities for Disabled Communities.</h3>
+            <button class="support-btn  bg-transparent cursor-pointer relative p-4 outline-none mt-5 text-xl">Get Support Now!</button>
+        </div>
+        </section>
+       
+        <section class="services-section my-12 md:my-24 py-8 mx-10 sm:mx-auto">
+            <h1 class="font-semibold text-4xl text-center  mb-3">LOCATE THE SUPPORT YOU NEED!</h1>
+            <p class="font-xl text-center sm:w-2/3 mx-auto mb-12">Whether you need help with daily living activities, access to medical care, or just someone to talk to, we’re here for you.</p>
+         
+        <div class="services sm:grid sm:grid-cols-2 md:justify-items-center lg:mx-56 md:mx-24 sm:mx-10">
+            <div class="sm:border-r border-black ">
+            <div class="service1 my-4 flex  gap-6 mx-auto sm:border-b border-black md:px-32 py-12">
+                <img src="/src/Crescent-assets/assets/icons/analytics.png" class="w-16">
+                <h1 class="text-xl font-semibold  mt-5 ">PLAN MANAGEMENT</h1>
+            </div>
+            <div class="service1 my-4 flex  gap-6 mx-auto md:px-32 py-12">
+                <img src="/src/Crescent-assets/assets/icons/vaccine.png" class="w-16">
+                <h1 class="text-xl font-semibold mt-5">OLD-AGE CARE SERVICES</h1>
+            </div>
+            </div>
+        <div>
+            <div class="service1 my-4 flex  gap-6  sm:border-b border-black md:px-32 py-12">
+                <img src="/src/Crescent-assets/assets/icons/call-center.png" class="w-16">
+                <h1 class="text-xl font-semibold mt-5">CAREGIVER SERVICES</h1>
+            </div>
+            <div class="service1 my-4 flex  gap-6 mx-auto md:px-32 py-12">
+                <img src="/src/Crescent-assets/assets/icons/care.png" class="w-16 sm:ml-2 md:ml-auto">
+                <h1 class="text-xl font-semibold mt-5 ">MEDICAL SERVICES</h1>
+            </div>
+        </div>
+
+        </div>
+        </section>
+        
+        <section class="partner-section  my-24 py-28">
+            <div class="partner pt-4">
+                <h1 class="font-semibold text-4xl text-center mb-3">WHY PARTNER WITH US?</h1>
+            <div class="partnership flex flex-col md:flex-row justify-center gap-10  sm:px-16 px-9 md:px-auto">
+               
+                <div class="services1 md:w-1/4 text-center ">
+                    <div class="service-imgg rounded-full  text-center">
+                       <span class="relative top-6 right-5 text-4xl "><i class="fa-sharp fa-solid fa-check"></i> </span> 
+                    </div>
+                    <div class="description-service border-black md:border-r pr-12">
+                    <h3 class="font-semibold mt-8 mb-2 ">REGISTERED PROVIDER</h3>
+                    <p class="text-left relative left-4">As a registered provider, we believe in delivering quality services to disabled people and their families. We provide the highest standards of care and support, tailored to individual needs by partnering with disabled people, their families and local communities.</p>
+                </div>
+            </div>
+
+                <div class="services1 md:w-1/4 text-center">
+                    <div class="service-imgg rounded-full    text-center">
+                       <span class="relative top-6 right-5 text-4xl "><i class="fa-solid fa-user-tie"></i></span> 
+                    </div>
+                    <div class="description-service border-black md:border-r pr-12">
+                    <h3 class="font-semibold  mt-8 mb-2">EXPERIENCED PROFESSIONALS</h3>
+                    <p class="text-left relative left-4">As a registered provider, we believe in delivering quality services to disabled people and their families. We provide the highest standards of care and support, tailored to individual needs by partnering with disabled people, their families and local communities.</p>
+                </div>
+            </div> 
+
+                <div class="services1  md:w-1/4 text-center pb-20">
+                    <div class="service-imgg rounded-full  text-center">
+                       <span class="relative top-6 right-5  text-4xl"><i class="fa-sharp fa-solid fa-hand-holding-heart"></i></span> 
+                    </div>
+                    <div class="description-service pr-12">
+                    <h3 class="font-semibold  mt-8 mb-2 ">THERAPEUTIC SUPPORT</h3>
+                    <p class="text-left relative left-4">Are you seeking a reliable home health care or disability support services provider? Our therapeutic support services provide the best care to everyone in need and aim to tailor our services to meet those requirements.</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </section>
+
+        <section class="about-section lg:mx-32   md:my-24 py-8">
+            <div class="about flex flex-col md:flex-row justify-center lg:gap-20 md:gap-12 mx-10">
+                <div class="about-img md:w-3/5 sm:mx-16 md:mx-auto">
+                    <img src="/src/Crescent-assets/assets/images/elderly-woman-working-with-contracts.jpg" class="w-full mt-2">
+                </div>
+                <div class="about-description md:w-2/4 sm:mx-16 mt-10 md:mt-0 md:mx-auto">
+                    <h1 class="font-semibold text-4xl text-left mb-3 ">ABOUT US  </h1>
+                    <p class="text-left ">Welcome to Crescent Community Care, where we, as registered, strive to provide support services for disabled individuals. We offer a range of NDIS, SSRC, and home care services designed to meet each person’s needs. Our dedicated team of professionals is here to work closely with our clients and their families to develop personalized support plans tailored to their specific needs and goals. We offer daily activities support, capacity building, personal care, support to access social and recreational services, short-term accommodations and respite services.</p>
+                    <p class="text-left ">At Crescent Community Care, we are committed to service excellence and quality.
+                     We believe in empowering our clients to live their entire lives and achieve their potential. </p>
+                     <button class="about-btn bg-transparent cursor-pointer relative p-4 outline-none mt-5 text-xl">Join Our Community!</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="blogs-section my-24 " style="background: url('assets/2018-05-14_metro_ross_unemployed-with-disabilities-related.webp'); background-position: 100% 60%;">
+            <div class="blogs-pages opacity-90 p-12 md:py-28  md:px-24 text-white">
+            <h1 class="font-semibold text-4xl sm:text-center  mb-3 ">FIND YOUR NEXT READ!</h1>
+            <P class="text-base md:w-1/2 text-center  mx-auto mb-12">Our blogs will inspire, educate, and empower you. So check out our blog for your next great read, and let's continue to build a more inclusive and diverse world.</P>
+            <div class="blogs flex flex-col md:flex-row text-center justify-center">
+                <div class="blog1 mb-24">
+                    <div class="blog-img">
+                        <img src="/src/Crescent-assets/assets/images/WhatsApp Image 2023-05-26 at 2.27.16 PM.jpeg " class=" mx-auto shadow-5xl">
+                    </div>
+                    <div class="blog-des  relative content-center">
+                        <h3 class="font-semibold my-8 sm:w-2/3 mx-auto">The ultimate guide to become a NDIS support worker in Australia.</h3>
+                        <div class="btn relative flex justify-center">
+                            <button class="read-btn  p-3 text-white absolute  "><a href="https://crescentcommunitycare.com.au/ndis-support-worker-in-australia/" target="_blank">Read More <i class="fa-solid fa-angles-right"></i></a></button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="blog1 mb-24">
+                    <div class="blog-img ">
+                        <img src="/src/Crescent-assets/assets/1000_F_478913312_73D5LZUpUJ28H4IbNSL9fKuD0xe15B6r.jpg" class=" mx-auto shadow-5xl">
+                    </div>
+                    <div class="blog-des mx-auto relative">
+                        <h3 class="font-semibold my-8 sm:w-2/3 mx-auto">Crescent Community Care guide to community healty nurses</h3>
+                        <div class="btn relative flex justify-center">
+                            <button class="read-btn  p-3 text-white absolute  "><a href="https://crescentcommunitycare.com.au/ndis-support-worker-in-australia/" target="_blank">Read More <i class="fa-solid fa-angles-right"></i></a></button>
+
+                        </div>                    </div>
+                </div>
+                <div class="blog1 pb-8">
+                    <div class="blog-img ">
+                        <img src="/src/Crescent-assets/assets/images/old man-nurse.jpeg " class=" mx-auto shadow-5xl">
+                    </div>
+                    <div class="blog-des mx-auto relative">
+                        <h3 class="font-semibold my-8 sm:w-2/3 mx-auto">Inside the NDIS Commission Portal: A comrehensive overview</h3>
+                        <div class="btn relative flex justify-center">
+                            <button class="read-btn  p-3 text-white absolute  "><a href="https://crescentcommunitycare.com.au/ndis-support-worker-in-australia/" target="_blank">Read More <i class="fa-solid fa-angles-right"></i></a></button>
+
+                        </div>                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="about-section lg:mx-32 md:my-24 py-8">
+            <div class="about flex flex-col md:flex-row justify-center lg:gap-20 md:gap-12 mx-10">
+                
+                <div class="about-description md:w-2/4 sm:mx-16 mt-10 md:mt-0 md:mx-auto">
+                    <h1 class="font-semibold text-4xl text-left mb-3 ">OUR MISSION  </h1>
+                    
+                    <p class="text-left leading-relaxed">Crescent Community is dedicated to providing the best home care packages and community care services to individuals with disabilities. We aim to ensure everyone can access the necessary resources and support to live a healthy and independent life. We aim to create an inclusive environment that encourages collaboration, respect, and understanding. We are intended to help our clients reach their full potential by providing various community health center services, such as medical care, social activities, recreational activities, educational programs, housing assistance, and employment opportunities. Our vision is to empower our clients to lead meaningful lives in their communities. </p>
+                </div>
+                <div class="about-img md:w-3/5 sm:mx-16 md:mx-auto">
+                    <img src="/src/Crescent-assets/assets/images/WhatsApp Image 2023-05-26 at 3.12.22 PM.jpeg " class="w-full mt-2">
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="contact mt-24">
+            <div class="flex flex-col md:flex-row justify-around   bg-white rounded-md mx-4 sm:mx-auto relative  z-20 sm:w-3/4   bottom-11 p-6">
+                <div class="email sm:mx-20 md:mx-auto">
+                    <p><i class="fa-solid fa-envelope"></i> Admin@crescentcommunitycare.com.au</p>
+                </div>
+                <div class="email sm:mx-20 md:mx-auto">
+                    <p><i class="fa-solid fa-phone"></i> 1300 879 983</p>
+                </div>
+                <div class="email sm:mx-20 md:mx-auto">
+                    <p><i class="fa-solid fa-clock"></i> Monday-Friday: 9AM-5PM</p>
+                </div>
+                
+            </div>
+        </section>
+
+        
+        <footer class="text-white -mt-20" style="background: url('/src/Crescent-assets/assets/Blogs/child-helping-his-disabled-mother_23-2149226794'); background-size: cover; background-position: 20% 50%;">
+            <div class="footer-section flex flex-col md:flex-row justify-around items-center gap-12  sm:px-40 px-10 py-20 sm:py-28   z-1 bg-black   opacity-80 ">
+                <div class="logo sm:w-2/4 md:ml-4">
+                    <img src="/src/Crescent-assets/assets/Crescent-Community-Care-logo.webp" class="w-24">
+                    <h3 class="font-bold text-white mt-2 text-xl mb-3">About Crescent Care</h3>
+                    <p class="text-white">Supporting people to have a better and quality lifestyle that can enable them in achieving their goals.</p>
+                </div>
+                <div class="services lg:w-1/2 text-white">
+                    <h3 class="font-bold text-2xl relative mb-3">Services</h3>
+                    <ul>
+                        <li><a>Accommodation Services</a></li>
+                        <li><a>Travel and Transport</a></li>
+                        <li ><a>Plan Management</a></li>
+                        <li><a>Daily Living</a></li>
+                        <li ><a href="#">View All Services <i class="fa-solid fa-angles-right"></i> </a></li>
+                    </ul>
+                </div>
+              
+                <div class="officess sm:w-3/4 text-white">
+                    <h3 class="font-bold text-2xl mb-3 relative">Offices</h3>
+                    <ul>
+                        <li >Suite G004 Ground Level Mega workspace Unit 112, No 22-30 Wallace Avenue Point Cook VIC 3030</a></li>
+                        <li >169 Fullarton Road. Level 3, Dulwich Adelaide, SA 5065, AUS</li>
+                        <li >100 Havelock Street, Perth, WA 6005, AUS</li>
+                        <li >66 Smith St, Darwin City NT 0800</li>
+                     
+                    </ul>
+                </div>
+                <div class="map  mr-8">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.473920608098!2d144.74311491584638!3d-37.87259814518631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad688543e294859%3A0xc2434a29ab3f0933!2sMegaWorkspace!5e0!3m2!1sen!2s!4v1679878295632!5m2!1sen!2s" width="250" height="250" style="border: 0px; pointer-events: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+            <div class="bg-black opacity-80 text-white">
+                <p class="text-center border-t border-gray-400 py-4 ">COPYRIGHT © 2021 CRESCENT COMMUNITY CARE</p>
+
+            </div>
+        </footer>
+       <script src="index.js"></script>
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    </body>
+</html>
